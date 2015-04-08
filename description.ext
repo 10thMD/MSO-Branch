@@ -1,0 +1,40 @@
+author = "10th Mountain Division";
+onloadname = "MSO Sahrani v1.0";
+loadScreen = "images\loadscreen.jpg";
+
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+
+// REQUIRED FOR BRS DO NOT EDIT
+#include "BRS\defines.hpp"
+#include "BRS\dialogs.hpp"
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 40;
+};
+
+OnLoadMission = "1-32 INF Chosin | 10th CAB | 5thSFG ODA5121";
+respawn = BASE;
+respawndelay = 3;
+RespawnDialog = 0;
+disabledAI = 1;
+joinUnassigned = 1;
+enabledebugconsole = 1;
+
+showCompass   = 1;
+showGPS       = 1;
+showMap       = 1; 
+
+#include "VAS\menu.hpp"
+
+#include "taw_vd\dialog.hpp"
+
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+	#include "taw_vd\CfgFunctions.hpp"
+};
