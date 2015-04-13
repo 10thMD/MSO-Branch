@@ -2,7 +2,8 @@ enableSaving [false, false];
 
 _igiload = execVM "IgiLoad\IgiLoadInit.sqf";
 
-[] execVM "Scripts\grenadeStop.sqf";
+execVM "Scripts\grenadeStop.sqf";
+execVM "R3F_LOG\init.sqf";
 
 box1 addAction ['<t color="#FFFF00">' + "Remove Fatigue" + '</t>', "scripts\Loadout\Fatigue.sqf"];
 box1 addAction ['<t color="#FFFF00">' + "Squad Leader" + '</t>', "scripts\Loadout\SL.sqf"];

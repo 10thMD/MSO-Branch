@@ -9,6 +9,11 @@ onLoadMissionTime=false;
 #include "BRS\defines.hpp"
 #include "BRS\dialogs.hpp"
 
+// REQUIRED FOR R3F LOGISTICS	
+#include "R3F_LOG\desc_include.h"
+
+#include "VAS\menu.hpp"
+#include "taw_vd\dialog.hpp"
 class Header
 {
 	gameType = Coop;
@@ -28,9 +33,7 @@ showCompass   = 1;
 showGPS       = 1;
 showMap       = 1; 
 
-#include "VAS\menu.hpp"
 
-#include "taw_vd\dialog.hpp"
 
 
 class CfgFunctions
