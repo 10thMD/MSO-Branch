@@ -1908,13 +1908,13 @@ class Mission
 						};
 						class Item4
 						{
-							value="towns";
+							value="all";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_LOCATIONTYPE";
 						};
 						class Item5
 						{
-							value="0.1";
+							value="0.3";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_spawn_setting";
 						};
@@ -1932,7 +1932,7 @@ class Mission
 						};
 						class Item8
 						{
-							value="true";
+							value="false";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_UseDominantFaction";
 						};
@@ -1944,7 +1944,7 @@ class Mission
 						};
 						class Item10
 						{
-							value="700";
+							value="1000";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_spawndistance";
 						};
@@ -2112,7 +2112,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="25";
+							value="50";
 							parentCls="ALiVE_amb_civ_population";
 							typeName="activeLimiter";
 						};
@@ -2164,7 +2164,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="forwardspawn";
+							value="none";
 							parentCls="ALiVE_sup_multispawn";
 							typeName="spawntype";
 						};
@@ -2388,13 +2388,13 @@ class Mission
 						};
 						class Item6
 						{
-							value="1";
+							value="1.5";
 							parentCls="ALiVE_amb_civ_placement";
 							typeName="placementMultiplier";
 						};
 						class Item7
 						{
-							value="0.2";
+							value="0.6";
 							parentCls="ALiVE_amb_civ_placement";
 							typeName="ambientVehicleAmount";
 						};
