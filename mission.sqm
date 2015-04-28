@@ -117,17 +117,19 @@ class Mission
 	randomSeed=10983293;
 	class Intel
 	{
+		briefingName="10thMD MSO v073";
+		overviewText="10th Mountain Division Multi-Session Operation v073";
 		resistanceWest=0;
 		startWeather=0.14999999;
 		startWind=0.099999994;
 		startWaves=0.099999994;
-		forecastWeather=0.29999998;
+		forecastWeather=0;
 		forecastWind=0.099999994;
 		forecastWaves=0.099999994;
 		forecastLightnings=0.099999994;
 		year=2015;
 		month=7;
-		hour=6;
+		hour=5;
 		minute=55;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
@@ -724,7 +726,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={849.76019,0.0047484539,2773.9795};
+					position[]={8100.1152,179.34822,7451.3911};
 					class args
 					{
 						items=9;
@@ -748,19 +750,19 @@ class Mission
 						};
 						class Item3
 						{
-							value="0.5";
+							value="0.9";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="reinforcements";
 						};
 						class Item4
 						{
-							value="BLU_F";
+							value="NONE";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="faction1";
 						};
 						class Item5
 						{
-							value="BLU_G_F";
+							value="NONE";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="faction2";
 						};
@@ -802,7 +804,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={848.75116,-61.283272,2837.2522};
+					position[]={8099.1064,183.11591,7514.6636};
 					class args
 					{
 						items=20;
@@ -844,13 +846,13 @@ class Mission
 						};
 						class Item6
 						{
-							value="60";
+							value="200";
 							parentCls="ALiVE_mil_placement";
 							typeName="size";
 						};
 						class Item7
 						{
-							value="Random";
+							value="Specops";
 							parentCls="ALiVE_mil_placement";
 							typeName="type";
 						};
@@ -904,13 +906,13 @@ class Mission
 						};
 						class Item16
 						{
-							value="false";
+							value="true";
 							parentCls="ALiVE_mil_placement";
 							typeName="createHQ";
 						};
 						class Item17
 						{
-							value="false";
+							value="true";
 							parentCls="ALiVE_mil_placement";
 							typeName="placeHelis";
 						};
@@ -922,7 +924,7 @@ class Mission
 						};
 						class Item19
 						{
-							value="0.2";
+							value="0.6";
 							parentCls="ALiVE_mil_placement";
 							typeName="ambientVehicleAmount";
 						};
@@ -946,7 +948,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={896.65051,-60.740849,2836.2537};
+					position[]={8147.0059,178.50974,7513.6646};
 					class args
 					{
 						items=17;
@@ -988,19 +990,19 @@ class Mission
 						};
 						class Item6
 						{
-							value="false";
+							value="true";
 							parentCls="ALiVE_civ_placement";
 							typeName="withPlacement";
 						};
 						class Item7
 						{
-							value="60";
+							value="200";
 							parentCls="ALiVE_civ_placement";
 							typeName="size";
 						};
 						class Item8
 						{
-							value="Random";
+							value="Specops";
 							parentCls="ALiVE_civ_placement";
 							typeName="type";
 						};
@@ -1072,7 +1074,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={844.43988,-0.0060902396,2680.7813};
+					position[]={8094.7949,175.40358,7358.1919};
 					class args
 					{
 						items=10;
@@ -1096,7 +1098,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="200";
+							value="10000";
 							parentCls="ALiVE_mil_logistics";
 							typeName="forcePool";
 						};
@@ -1132,7 +1134,7 @@ class Mission
 						};
 						class Item9
 						{
-							value="false";
+							value="true";
 							parentCls="ALiVE_mil_logistics";
 							typeName="allowPlaneReinforcement";
 						};
@@ -1156,7 +1158,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={860.53888,-0.0060829148,3087.7393};
+					position[]={15640.496,277.77194,11275.941};
 					class args
 					{
 						items=17;
@@ -1186,13 +1188,13 @@ class Mission
 						};
 						class Item4
 						{
-							value="250";
+							value="160";
 							parentCls="ALiVE_civ_placement";
 							typeName="sizeFilter";
 						};
 						class Item5
 						{
-							value="10";
+							value="0";
 							parentCls="ALiVE_civ_placement";
 							typeName="priorityFilter";
 						};
@@ -1204,7 +1206,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="100";
+							value="800";
 							parentCls="ALiVE_civ_placement";
 							typeName="size";
 						};
@@ -1216,13 +1218,13 @@ class Mission
 						};
 						class Item9
 						{
-							value="0.75";
+							value="1";
 							parentCls="ALiVE_civ_placement";
 							typeName="readinessLevel";
 						};
 						class Item10
 						{
-							value="15";
+							value="35";
 							parentCls="ALiVE_civ_placement";
 							typeName="roadblocks";
 						};
@@ -1282,7 +1284,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={617.72375,0.0027569488,3183.6255};
+					position[]={6887.1138,-0.00093767233,6114.1284};
 					class args
 					{
 						items=8;
@@ -1352,7 +1354,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={685.59631,-0.001163716,3182.3267};
+					position[]={6954.9863,-0.0011785175,6112.8296};
 					class args
 					{
 						items=8;
@@ -1422,7 +1424,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={809.69836,0.00080191111,3087.7637};
+					position[]={15589.654,265.45688,11275.965};
 					class args
 					{
 						items=20;
@@ -1446,13 +1448,13 @@ class Mission
 						};
 						class Item3
 						{
-							value="100";
+							value="0";
 							parentCls="ALiVE_mil_placement";
 							typeName="sizeFilter";
 						};
 						class Item4
 						{
-							value="10";
+							value="0";
 							parentCls="ALiVE_mil_placement";
 							typeName="priorityFilter";
 						};
@@ -1464,7 +1466,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="400";
+							value="800";
 							parentCls="ALiVE_mil_placement";
 							typeName="size";
 						};
@@ -1476,13 +1478,13 @@ class Mission
 						};
 						class Item8
 						{
-							value="0";
+							value="2500";
 							parentCls="ALiVE_mil_placement";
 							typeName="randomcamps";
 						};
 						class Item9
 						{
-							value="0.75";
+							value="1";
 							parentCls="ALiVE_mil_placement";
 							typeName="readinessLevel";
 						};
@@ -1542,7 +1544,7 @@ class Mission
 						};
 						class Item19
 						{
-							value="0.2";
+							value="0.6";
 							parentCls="ALiVE_mil_placement";
 							typeName="ambientVehicleAmount";
 						};
@@ -1566,7 +1568,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={570.19641,0.0026154979,3185.2942};
+					position[]={6839.5864,0.010532716,6115.7974};
 					class args
 					{
 						items=35;
@@ -1798,7 +1800,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={849.79999,0.11871395,3186.4917};
+					position[]={15629.758,283.29507,11374.693};
 					class args
 					{
 						items=9;
@@ -1828,7 +1830,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="IND_F";
+							value="NONE";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="faction1";
 						};
@@ -1876,7 +1878,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={850.13342,-0.006359519,2915.1599};
+					position[]={7083.7651,0.00053025829,5879.979};
 					class args
 					{
 						items=16;
@@ -1996,7 +1998,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={865.88538,0.00011194637,3285.4968};
+					position[]={15645.842,274.00311,11473.699};
 					class args
 					{
 						items=10;
@@ -2020,7 +2022,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="500";
+							value="5000";
 							parentCls="ALiVE_mil_logistics";
 							typeName="forcePool";
 						};
@@ -2080,7 +2082,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={683.86292,0.0030216188,3114.2041};
+					position[]={6953.2529,-0.0015201727,6044.7065};
 					class args
 					{
 						items=8;
@@ -2150,7 +2152,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={567.27893,0.00072831102,3161.842};
+					position[]={6836.6685,0.0075982502,6092.3452};
 					class args
 					{
 						items=4;
@@ -2196,7 +2198,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={729.49042,-0.0027112132,3186.0242};
+					position[]={6998.8799,0.0030300065,6116.5269};
 					class args
 					{
 						items=21;
@@ -2344,7 +2346,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={685.13147,0.0001121501,3151.6516};
+					position[]={6954.5215,-0.007634527,6082.1548};
 					class args
 					{
 						items=9;
@@ -2420,7 +2422,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={896.13434,0.0006846711,2912.6965};
+					position[]={7129.7661,-0.0021513451,5877.5161};
 					class args
 					{
 						items=18;
@@ -2438,7 +2440,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="LOP_IT";
+							value="";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="skillFactionsRegular";
 						};
@@ -2456,19 +2458,19 @@ class Mission
 						};
 						class Item5
 						{
-							value="";
+							value="LOP_IT";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillFactions";
 						};
 						class Item6
 						{
-							value="0.2";
+							value="0.1";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillAbilityMin";
 						};
 						class Item7
 						{
-							value="0.25";
+							value="0.3";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillAbilityMax";
 						};
@@ -2486,31 +2488,31 @@ class Mission
 						};
 						class Item10
 						{
-							value="0.3";
+							value="0.2";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillAimSpeed";
 						};
 						class Item11
 						{
-							value="0.3";
+							value="0.2";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillEndurance";
 						};
 						class Item12
 						{
-							value="0.9";
+							value="0.5";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillSpotDistance";
 						};
 						class Item13
 						{
-							value="0.5";
+							value="0.9";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillSpotTime";
 						};
 						class Item14
 						{
-							value="0.7";
+							value="0.5";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillCourage";
 						};
@@ -2522,7 +2524,7 @@ class Mission
 						};
 						class Item16
 						{
-							value="1";
+							value="0.9";
 							parentCls="ALiVE_sys_aiskill";
 							typeName="customSkillCommanding";
 						};
@@ -2615,7 +2617,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={632.78186,-63.353214,2553.5437};
+					position[]={6902.1714,0.0094202589,5484.0464};
 					class args
 					{
 						items=6;
@@ -2673,7 +2675,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={765.90533,-0.0031359424,3186.9861};
+					position[]={7035.2949,0.0013148263,6117.4888};
 					class args
 					{
 						items=5;
@@ -2725,7 +2727,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={1043.0217,0.0010482201,3179.7021};
+					position[]={7312.4111,0.00034289793,6110.2056};
 					class args
 					{
 						items=9;
@@ -2855,7 +2857,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={597.95813,-0.041466217,2535.6274};
+					position[]={6867.3477,-0.00069328235,5466.1304};
 					class args
 					{
 						items=1;
@@ -2885,7 +2887,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={598.04047,-0.073819004,2540.1343};
+					position[]={6867.4307,0.003272119,5470.6372};
 					class args
 					{
 						items=2;
@@ -2921,7 +2923,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={608.26581,-63.69841,2570.9631};
+					position[]={6877.6558,0.0020661,5501.4663};
 					class args
 					{
 						items=5;
@@ -2973,7 +2975,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={618.18439,-0.00052936457,2570.9644};
+					position[]={6887.5742,-0.0012589756,5501.4673};
 					class args
 					{
 						items=21;
@@ -3121,7 +3123,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={628.10291,0.00089915865,2570.9619};
+					position[]={6897.4927,-0.0019298461,5501.4653};
 					class args
 					{
 						items=2;
@@ -3155,7 +3157,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={638.32202,-0.0037297162,2570.6616};
+					position[]={6907.7119,0.0082559912,5501.1646};
 					class args
 					{
 						items=2;
@@ -3189,7 +3191,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={647.94006,-63.058086,2570.6628};
+					position[]={6917.3296,0.010703869,5501.1655};
 					class args
 					{
 						items=3;
@@ -3229,7 +3231,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={656.65637,-62.899841,2571.2634};
+					position[]={6926.0464,-0.00060674897,5501.7661};
 					id=82;
 					side="LOGIC";
 					vehicle="cse_sys_logistics";
@@ -3247,7 +3249,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={598.65155,0.04724364,2562.655};
+					position[]={6868.041,-0.010887899,5493.1577};
 					class args
 					{
 						items=11;
@@ -3335,7 +3337,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={598.43488,0.020278782,2558.8232};
+					position[]={6867.8247,-0.0095399581,5489.3257};
 					class args
 					{
 						items=3;
@@ -3375,7 +3377,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={598.39532,-0.009860266,2555.752};
+					position[]={6867.7852,-0.0060172779,5486.2544};
 					class args
 					{
 						items=1;
@@ -3403,7 +3405,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={598.3725,-0.069921128,2549.2773};
+					position[]={6867.7627,0.0029053548,5479.7798};
 					class args
 					{
 						items=2;
@@ -3437,7 +3439,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={597.83173,-0.08615844,2544.4214};
+					position[]={6867.2217,0.0051580737,5474.9243};
 					id=87;
 					side="LOGIC";
 					vehicle="cse_moduleRemoveBodyOnDisconnect";
@@ -3455,7 +3457,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={607.43408,0.00099883683,2552.6685};
+					position[]={6876.8237,-0.0047526648,5483.1714};
 					class args
 					{
 						items=4;
@@ -3501,7 +3503,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={611.73157,-63.668114,2552.6697};
+					position[]={6881.1216,-0.0030114297,5483.1724};
 					class args
 					{
 						items=8;
@@ -3571,7 +3573,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={615.95618,-63.610432,2552.9602};
+					position[]={6885.3462,0.0013910707,5483.4634};
 					class args
 					{
 						items=1;
@@ -3599,7 +3601,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={619.59814,-0.0036299611,2553.3252};
+					position[]={6888.9878,0.0063773505,5483.8276};
 					class args
 					{
 						items=3;
@@ -3639,7 +3641,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={624.76965,-63.479404,2553.5437};
+					position[]={6894.1597,0.011505456,5484.0464};
 					class args
 					{
 						items=6;
@@ -3697,7 +3699,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={628.12018,-63.426308,2553.6877};
+					position[]={6897.5103,0.012190381,5484.1909};
 					class args
 					{
 						items=1;
