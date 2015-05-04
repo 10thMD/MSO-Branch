@@ -55,8 +55,7 @@ class Mission
 		"alive_sys_data",
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
-		"A3_Structures_F_Mil_Helipads",
-		"aia_misc3_config"
+		"A3_Structures_F_Mil_Helipads"
 	};
 	addOnsAuto[]=
 	{
@@ -111,7 +110,6 @@ class Mission
 		"RDS_StaticWeapons_RHS_USF",
 		"A3_Structures_F_Heli_Ind_Cargo",
 		"A3_Structures_F_Mil_Helipads",
-		"aia_misc3_config",
 		"aia_sara_dbe1_config"
 	};
 	randomSeed=10983293;
@@ -1478,7 +1476,7 @@ class Mission
 						};
 						class Item8
 						{
-							value="2500";
+							value="1500";
 							parentCls="ALiVE_mil_placement";
 							typeName="randomcamps";
 						};
@@ -3851,7 +3849,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=750;
+		items=737;
 		class Item0
 		{
 			position[]={2376.3535,17.690868,3056.0681};
@@ -3861,7 +3859,7 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="box1";
-			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;0 = [this,""nato_pick""] execVM ""R3F_LOG\USER_FUNCT\do_not_lose_it.sqf"";  ";
 		};
 		class Item1
 		{
@@ -3911,7 +3909,7 @@ class Mission
 			vehicle="FlagCarrierWest";
 			skill=0.60000002;
 			text="mainPole";
-			init="this addAction [""Battlefield Re-spawn System"", ""BRS\BRS_launch.sqf"", [[NATO_BASE,MHQ1,MHQ2],west,false,50]];  ";
+			init="0 = this addAction [""Battlefield Re-spawn System"", ""BRS\BRS_launch.sqf"", [[NATO_WEST,MHQ1,MHQ2],west,false,25]]; 0 = [this,""nato_pick""] execVM ""R3F_LOG\USER_FUNCT\do_not_lose_it.sqf"";  ";
 		};
 		class Item6
 		{
@@ -3921,7 +3919,7 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="MHQ1";
-			init="this addAction [""Battlefield Re-spawn System"", ""BRS\BRS_launch.sqf"", [[NATO_BASE,MHQ1,MHQ2],west,false,50]];  ";
+			init="0 = this addAction [""Battlefield Re-spawn System"", ""BRS\BRS_launch.sqf"", [[NATO_WEST,MHQ1,MHQ2],west,false,0]]; 0 = [this,""nato_pick""] execVM ""R3F_LOG\USER_FUNCT\do_not_lose_it.sqf"";  ";
 		};
 		class Item7
 		{
@@ -3931,7 +3929,7 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="MHQ2";
-			init="this addAction [""Battlefield Re-spawn System"", ""BRS\BRS_launch.sqf"", [[NATO_BASE,MHQ1,MHQ2],west,false,50]];  ";
+			init="0 = this addAction [""Battlefield Re-spawn System"", ""BRS\BRS_launch.sqf"", [[NATO_WEST,MHQ1,MHQ2],west,false,0]];";
 		};
 		class Item8
 		{
@@ -3953,7 +3951,7 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="box1_1";
-			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;0 = [this,""nato_pick""] execVM ""R3F_LOG\USER_FUNCT\do_not_lose_it.sqf"";  ";
 		};
 		class Item10
 		{
@@ -5373,7 +5371,7 @@ class Mission
 			lock="UNLOCKED";
 			skill=0.60000002;
 			text="box1_5";
-			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal; 0 = [this,""nato_pick""] execVM ""R3F_LOG\USER_FUNCT\do_not_lose_it.sqf"";  ";
 		};
 		class Item171
 		{
@@ -10173,6 +10171,7 @@ class Mission
 			vehicle="B_Truck_01_medical_F";
 			skill=0.60000002;
 			text="medtruck_1";
+			init="0 = [this] execVM ""R3F_LOG\USER_FUNCT\do_not_lose_it.sqf"";";
 		};
 		class Item728
 		{
@@ -10192,7 +10191,8 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo10_military_green_F";
 			skill=0.60000002;
-			init="0 = [this] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";";
+			text="cFactory3";
+			init="0 = [this] execVM ""Scripts\cFactory.sqf"";";
 		};
 		class Item730
 		{
@@ -10201,7 +10201,8 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo10_military_green_F";
 			skill=0.60000002;
-			init="0 = [this] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";";
+			text="cFactory2";
+			init="0 = [this] execVM ""Scripts\cFactory.sqf"";";
 		};
 		class Item731
 		{
@@ -10210,11 +10211,12 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo10_military_green_F";
 			skill=0.60000002;
-			init="0 = [this] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";";
+			text="cFactory1";
+			init="0 = [this] execVM ""Scripts\cFactory.sqf"";";
 		};
 		class Item732
 		{
-			position[]={2701.0789,17.173502,2661.8445};
+			position[]={2499.4619,13.905,2561.9287};
 			azimut=180;
 			id=836;
 			side="EMPTY";
@@ -10224,178 +10226,48 @@ class Mission
 		};
 		class Item733
 		{
-			position[]={2701.1919,17.266459,2671.1804};
+			position[]={2500.1709,13.905,2526.2415};
 			azimut=180;
 			id=837;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item734
-		{
-			position[]={2701.3245,17.169218,2651.5063};
-			azimut=180;
-			id=838;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item735
-		{
-			position[]={2691.2524,17.091791,2661.5076};
-			azimut=180;
-			id=839;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item736
-		{
-			position[]={2711.0979,17.218901,2661.6077};
-			azimut=180;
-			id=840;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item737
-		{
-			position[]={2694.4329,17.169813,2668.8281};
-			azimut=180;
-			id=841;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item738
-		{
-			position[]={2708.2156,17.170498,2654.4873};
-			azimut=180;
-			id=842;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item739
-		{
-			position[]={2693.8367,17.116444,2654.8853};
-			azimut=180;
-			id=843;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item740
-		{
-			position[]={2707.752,17.267323,2668.8623};
-			azimut=180;
-			id=844;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item741
-		{
-			position[]={8127.0161,176.985,7869.8594};
-			azimut=180;
-			id=845;
 			side="EMPTY";
 			vehicle="Land_HelipadCircle_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 		};
-		class Item742
+		class Item734
 		{
-			position[]={8127.1294,176.985,7879.1953};
+			position[]={8124.4761,176.985,7875.1577};
 			azimut=180;
-			id=846;
+			id=838;
 			side="EMPTY";
-			vehicle="Land_coneLight";
+			vehicle="Land_HelipadCircle_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 		};
-		class Item743
+		class Item735
 		{
-			position[]={8127.2622,176.985,7859.521};
+			position[]={9499.1445,139.995,10079.529};
 			azimut=180;
-			id=847;
+			id=839;
 			side="EMPTY";
-			vehicle="Land_coneLight";
+			vehicle="Land_HelipadCircle_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 		};
-		class Item744
+		class Item736
 		{
-			position[]={8117.1899,176.985,7869.5225};
+			position[]={9699.041,139.995,10080.075};
 			azimut=180;
-			id=848;
+			id=840;
 			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item745
-		{
-			position[]={8137.0356,176.985,7869.6226};
-			azimut=180;
-			id=849;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item746
-		{
-			position[]={8120.3706,176.985,7876.8433};
-			azimut=180;
-			id=850;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item747
-		{
-			position[]={8134.1528,176.985,7862.5024};
-			azimut=180;
-			id=851;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item748
-		{
-			position[]={8119.7739,176.985,7862.8999};
-			azimut=180;
-			id=852;
-			side="EMPTY";
-			vehicle="Land_coneLight";
-			lock="UNLOCKED";
-			skill=0.60000002;
-		};
-		class Item749
-		{
-			position[]={8133.6895,176.985,7876.8774};
-			azimut=180;
-			id=853;
-			side="EMPTY";
-			vehicle="Land_coneLight";
+			vehicle="Land_HelipadCircle_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 		};
 	};
 	class Markers
 	{
-		items=10;
+		items=15;
 		class Item0
 		{
 			position[]={5302.4722,-0.039967332,5279.9697};
@@ -10416,7 +10288,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={8130.4922,176.985,7798.4204};
+			position[]={8160.436,176.985,7818.5};
 			name="NATO_WEST";
 			type="flag_NATO";
 		};
@@ -10444,12 +10316,10 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={8160.873,176.985,7818.2188};
+			position[]={8175.3926,176.985,7830.4419};
 			name="B_FOB_1";
 			text="FOB Ruthless";
 			type="flag_NATO";
-			a=2;
-			b=2;
 		};
 		class Item6
 		{
@@ -10462,14 +10332,14 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={2700.9866,17.165678,2661.2537};
+			position[]={2499.3696,13.905,2561.3379};
 			name="Air_Service_1";
 			text="Air Rearm/Refuel/Repair";
 			type="b_maint";
 		};
 		class Item8
 		{
-			position[]={2701.2676,16.997616,2625.9802};
+			position[]={2500.0815,13.924508,2438.2117};
 			name="dir1";
 			text="EXIT";
 			type="mil_arrow";
@@ -10478,20 +10348,56 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={2700.6772,17.286095,2713.894};
+			position[]={2500.0107,13.905,2581.0071};
 			name="dir1_1";
 			text="ENTER";
 			type="mil_arrow";
 			colorName="ColorRed";
 			angle=180;
 		};
+		class Item10
+		{
+			position[]={2500.0786,13.905,2525.6506};
+			name="Air_Service_1_1";
+			text="Air Rearm/Refuel/Repair";
+			type="b_maint";
+		};
+		class Item11
+		{
+			position[]={8124.3838,176.985,7874.5669};
+			name="Air_Service_1_2";
+			text="Air Rearm/Refuel/Repair";
+			type="b_maint";
+		};
+		class Item12
+		{
+			position[]={9499.0527,139.995,10078.938};
+			name="Air_Service_1_3";
+			text="Air Rearm/Refuel/Repair";
+			type="b_maint";
+		};
+		class Item13
+		{
+			position[]={9698.9492,139.995,10079.484};
+			name="Air_Service_1_4";
+			text="Air Rearm/Refuel/Repair";
+			type="b_maint";
+		};
+		class Item14
+		{
+			position[]={2372.2852,15.359694,2949.9573};
+			name="nato_pick";
+			text="Logistic Return Area";
+			type="mil_pickup";
+			colorName="ColorBlue";
+		};
 	};
 	class Sensors
 	{
-		items=1;
+		items=5;
 		class Item0
 		{
-			position[]={2701.156,17.168978,2661.449};
+			position[]={2499.5391,13.905,2561.5332};
 			a=10;
 			b=10;
 			activationBy="WEST";
@@ -10499,8 +10405,72 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="airservice_1";
-			expCond="(""LandVehicle"" countType thislist > 0) && count (thislist unitsBelowHeight 1) > 0";
-			expActiv="_xhandle= [(thislist select 0)] execVM ""Scripts\v_reload.sqf"";";
+			expCond="this and ((getPos (thisList select 0)) select 2 < 1)";
+			expActiv="_handle=[(thislist select 0)] execVM ""Scripts\v_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={2500.248,13.905,2525.8459};
+			a=10;
+			b=10;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="airservice_1_1";
+			expCond="this and ((getPos (thisList select 0)) select 2 < 1)";
+			expActiv="_handle=[(thislist select 0)] execVM ""Scripts\v_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={8124.5532,176.985,7874.7622};
+			a=10;
+			b=10;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="airservice_1_2";
+			expCond="this and ((getPos (thisList select 0)) select 2 < 1)";
+			expActiv="_handle=[(thislist select 0)] execVM ""Scripts\v_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={9499.2217,139.995,10079.134};
+			a=10;
+			b=10;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="airservice_1_3";
+			expCond="this and ((getPos (thisList select 0)) select 2 < 1)";
+			expActiv="_handle=[(thislist select 0)] execVM ""Scripts\v_reload.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={9699.1182,139.995,10079.68};
+			a=10;
+			b=10;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="airservice_1_4";
+			expCond="this and ((getPos (thisList select 0)) select 2 < 1)";
+			expActiv="_handle=[(thislist select 0)] execVM ""Scripts\v_reload.sqf"";";
 			class Effects
 			{
 			};

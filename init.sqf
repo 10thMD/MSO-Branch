@@ -1,6 +1,8 @@
 enableSaving [false, false];
 
 _igiload = execVM "IgiLoad\IgiLoadInit.sqf";
+null=[[NATO_WEST,MHQ1,MHQ2],WEST,false,0] execVM "BRS\BRS_launch.sqf";
+
 
 execVM "Scripts\grenadeStop.sqf";
 execVM "R3F_LOG\init.sqf";
@@ -45,6 +47,4 @@ toggled = 0;
 waituntil {!(isNull (findDisplay 46))}; 
 (findDisplay 46) displayAddEventHandler ["KeyDown","(_this select 1) call MY_KEYDOWN_FNC;false;"];
 
-null=[]execVM "BRS/BRS_launch.sqf";
-null=[[NATO_BASE,MHQ1,MHQ2],WEST] execVM "BRS\BRS_launch.sqf";
 
